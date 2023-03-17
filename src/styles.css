@@ -161,7 +161,53 @@ h1 {
   outline-offset: 4px;
 }
 
+/* Keyboard Styling */
+.keyboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.guess.keyboard {
+  gap: 4px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.cell.keyboard {
+  position: relative;
+  width: 9%;
+  display: grid;
+  place-content: center;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 15%;
+  color: black;
+  background-color: var(--color-gray-900);
+  font-size: 1.2rem;
+}
+
+.cell.keyboard.correct {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+.cell.keyboard.incorrect {
+  background: var(--color-gray-300);
+  border-color: var(--color-gray-300);
+  color: white;
+}
+.cell.keyboard.misplaced {
+  background: var(--color-warning);
+  border-color: var(--color-warning);
+  color: white;
+}
+
+/* Keyboard Styling */
+
 .banner {
+  z-index: 1;
   position: fixed;
   left: 0;
   right: 0;
